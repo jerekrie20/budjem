@@ -5,10 +5,10 @@ import {Head, Link, useForm, usePage} from '@inertiajs/vue3';
 import { ref,defineProps,defineEmits  } from "vue";
 import "vue3-colorpicker/style.css";
 
-import TextInput from "@/Components/TextInput.vue";
-import PrimaryButton from "@/Components/PrimaryButton.vue";
-import InputError from "@/Components/InputError.vue";
-import InputLabel from "@/Components/InputLabel.vue";
+import TextInput from "@/components/TextInput.vue";
+import PrimaryButton from "@/components/PrimaryButton.vue";
+import InputError from "@/components/InputError.vue";
+import InputLabel from "@/components/InputLabel.vue";
 
 import { ColorPicker } from "vue3-colorpicker";
 

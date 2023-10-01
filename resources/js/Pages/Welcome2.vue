@@ -1,6 +1,6 @@
 <script setup>
 import {Head, Link} from '@inertiajs/vue3';
-import Layout from "@/Layouts/Layout.vue";
+import Layout from "@/layouts/Layout.vue";
 
 defineProps({
     canLogin: { type: Boolean },

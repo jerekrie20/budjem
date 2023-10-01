@@ -4,13 +4,13 @@
 import {ref, defineProps, computed, reactive, watch} from 'vue';
 import {Head, usePage,Link} from '@inertiajs/vue3';
 
-import AuthenticatedLayout from "@/Layouts/AuthenticatedLayout.vue";
+import AuthenticatedLayout from "@/layouts/AuthenticatedLayout.vue";
 import AddBudget from "@/Pages/Budget/Partials/AddBudget.vue";
 
-import NavLink from "@/Components/NavLink.vue";
+import NavLink from "@/components/NavLink.vue";
 import AddIncome from "@/Pages/Budget/Partials/AddIncome.vue";
-import ExpensesTable from "@/Components/ExpensesTable.vue";
-import IncomeTable from "@/Components/IncomeTable.vue";
+import ExpensesTable from "@/components/ExpensesTable.vue";
+import IncomeTable from "@/components/IncomeTable.vue";
 
 const { expense, update,budgets,incomes,incomeIn } = defineProps(['expense', 'update','budgets','incomes','incomeIn']);
 

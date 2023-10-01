@@ -2,10 +2,10 @@
 
 // Other imports...
 import {Head, Link, useForm, usePage} from '@inertiajs/vue3';
-import TextInput from "@/Components/TextInput.vue";
-import PrimaryButton from "@/Components/PrimaryButton.vue";
-import InputError from "@/Components/InputError.vue";
-import InputLabel from "@/Components/InputLabel.vue";
+import TextInput from "@/components/TextInput.vue";
+import PrimaryButton from "@/components/PrimaryButton.vue";
+import InputError from "@/components/InputError.vue";
+import InputLabel from "@/components/InputLabel.vue";
 import {defineEmits, defineProps} from "vue";
 
 const { incomeIn, update } = defineProps(['incomeIn', 'update']);

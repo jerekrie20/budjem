@@ -1,6 +1,6 @@
 <script setup>
 
-import PrimaryButton from "@/Components/PrimaryButton.vue";
+import PrimaryButton from "@/components/PrimaryButton.vue";
 import {Link, usePage} from "@inertiajs/vue3";
 import {computed, ref, watch} from "vue";
 
