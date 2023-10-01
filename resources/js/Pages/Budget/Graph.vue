@@ -1,6 +1,6 @@
 <script setup>
 import AuthenticatedLayout from "@/Layouts/AuthenticatedLayout.vue";
-import AddBudget from "@/Pages/Budget/Partials/AddBudget.vue";
+
 import {Head} from '@inertiajs/vue3';
 import DoughnutChart from '@/components/DoughnutChart.vue';
 import NavLink from "@/Components/NavLink.vue";

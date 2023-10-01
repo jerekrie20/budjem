@@ -9,7 +9,6 @@ import AddBudget from "@/Pages/Budget/Partials/AddBudget.vue";
 
 import NavLink from "@/Components/NavLink.vue";
 import AddIncome from "@/Pages/Budget/Partials/AddIncome.vue";
-import PrimaryButton from "@/Components/PrimaryButton.vue";
 import ExpensesTable from "@/Components/ExpensesTable.vue";
 import IncomeTable from "@/Components/IncomeTable.vue";
 
