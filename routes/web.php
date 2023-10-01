@@ -40,7 +40,7 @@ Route::middleware('auth')->group(function () {
 
     //Expenses
     Route::get('/budget', [BudgetController::class,'index'])->name('budget');
-    Route::post('/budget/create', [BudgetController::class,'create'])->name('budget.create');
+    Route::post('/budget/store', [BudgetController::class,'store'])->name('budget.store');
     Route::get('/budget/show/{budget}', [BudgetController::class, 'show'])->name('budget.show');
     Route::put('/budget/update/{budget}', [BudgetController::class, 'update'])->name('budget.update');
     Route::get('/budget/destroy/{budget}', [BudgetController::class, 'destroy'])->name('budget.destroy');

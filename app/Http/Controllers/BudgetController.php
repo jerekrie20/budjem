@@ -87,6 +87,14 @@ class BudgetController extends Controller
      */
     public function create(Request $request)
     {
+
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     */
+    public function store(Request $request)
+    {
         $this->authorize('create', $request);
 
         $attributes = $this->validateBudget();
@@ -98,14 +106,6 @@ class BudgetController extends Controller
         session()->flash('message', 'Budget updated successfully');
 
         return Redirect::route('budget');
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     */
-    public function store(Request $request)
-    {
-
 
     }
 

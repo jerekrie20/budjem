@@ -48,7 +48,7 @@ const handleSubmit = async () => {
             });
         } else {
             // Use POST method for store
-            await form.post(route('budget.create'), {
+            await form.post(route('budget.store'), {
                 onFinish: resetForm,
             });
         }
