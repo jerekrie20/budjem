@@ -88,6 +88,7 @@ watch(pureColor, (newColor) => {
                     required
                     autofocus
                     autocomplete="name"
+                    placeholder="Rent"
                 />
 
                 <InputError class="mt-2" :message="form.errors.name"/>
@@ -104,6 +105,7 @@ watch(pureColor, (newColor) => {
                     required
                     autofocus
                     autocomplete="type"
+                    placeholder="Credit"
                 />
 
                 <InputError class="mt-2" :message="form.errors.type"/>
@@ -157,6 +159,7 @@ watch(pureColor, (newColor) => {
                     required
                     autofocus
                     autocomplete="amount"
+                    placeholder="100.00"
                 />
 
                 <InputError class="mt-2" :message="form.errors.amount"/>

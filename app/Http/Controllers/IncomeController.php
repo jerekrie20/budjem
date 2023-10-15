@@ -25,6 +25,7 @@ class IncomeController extends Controller
         $attributes = $request->validate([
             'name' => ['required'],
             'amount' =>['required','decimal:2'],
+            'pay_date' =>['required','date'],
             'frequency' => 'required|in:weekly,monthly,yearly,bi-weekly',
         ]);
 
@@ -58,6 +59,7 @@ class IncomeController extends Controller
         $attributes = $request->validate([
             'name' => ['required'],
             'amount' =>['required','decimal:2'],
+            'pay_date' =>['required','date'],
             'frequency' => 'required|in:weekly,monthly,yearly,bi-weekly',
         ]);
 

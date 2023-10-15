@@ -13,6 +13,7 @@ const { incomeIn, update } = defineProps(['incomeIn', 'update']);
 const form = useForm({
     name: incomeIn ? incomeIn.name : '',
     amount: incomeIn ? incomeIn.amount : '',
+    pay_date: incomeIn ? incomeIn.pay_date : '',
     frequency: incomeIn ? incomeIn.frequency : ''
 });
 
@@ -20,6 +21,7 @@ const form = useForm({
 const resetForm = () => {
     form.name = '';
     form.amount = '';
+    form.pay_date = '';
     form.frequency = '';
 };
 const emits = defineEmits(['form-submitted']);
@@ -53,8 +55,7 @@ const handleSubmit = async () => {
     <form @submit.prevent="handleSubmit" class="mt-6 space-y-6">
         <section class="flex xl:w-1/2 xl:m-auto flex-col sm:flex-row m-2 justify-center">
             <div class="mr-5">
-                <InputLabel for="name" value="Name"/>
-
+                    <InputLabel for="name" value="Name"/>
                 <TextInput
                     id="name"
                     type="text"
@@ -63,6 +64,7 @@ const handleSubmit = async () => {
                     required
                     autofocus
                     autocomplete="name"
+                    placeholder="Paycheck"
                 />
 
                 <InputError class="mt-2" :message="form.errors.name"/>
@@ -79,9 +81,26 @@ const handleSubmit = async () => {
                     required
                     autofocus
                     autocomplete="amount"
+                    placeholder="100.00"
                 />
 
                 <InputError class="mt-2" :message="form.errors.amount"/>
+            </div>
+
+            <div class="mr-5">
+                <InputLabel for="pay_date" value="Pay Date"/>
+
+                <TextInput
+                    id="pay_date"
+                    type="date"
+                    class="mt-1 block w-full"
+                    v-model="form.pay_date"
+                    required
+                    autofocus
+                    autocomplete="pay_date"
+                />
+
+                <InputError class="mt-2" :message="form.errors.pay_date"/>
             </div>
 
 

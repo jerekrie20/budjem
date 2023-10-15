@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('name');
             $table->decimal('amount', 8, 2);
             $table->enum('frequency', ['weekly', 'monthly', 'yearly']);
+            $table->date('pay_date');
             $table->timestamps();
         });
     }

@@ -46,6 +46,13 @@ const totalAmount = computed(() => {
                         }}</p>
                 </div>
 
+                <div class="flex-1">
+                    <span class="md:hidden font-medium mr-3 text-red-600">Pay Date: </span>
+                    <p class="inline text-sm font-semibold leading-6 text-black dark:text-white">{{
+                            income.pay_date
+                        }}</p>
+                </div>
+
                 <div class="flex-1 mb-2">
                     <span class="md:hidden font-medium mr-3 text-red-600">Frequency: </span>
                     <p class="inline text-sm font-semibold leading-6 text-black dark:text-white">{{
